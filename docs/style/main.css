@@ -6,6 +6,7 @@
 }
 body{
 	font-family: "メイリオ", Meiryo, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+    background-color: #e7d2ff;
 }
 html,body,div,span,h1,h2,h3,p,table,tr,th,td,ul,li,
 section,nav,header,footer,img,a{
@@ -29,7 +30,6 @@ ul,li{
 
 .main-wraper{
     position: relative;
-    background-color: #e7d2ff;
 }
 /* ヘッダーCSS */
 .header{
