@@ -27,12 +27,23 @@ ul,li{
 	padding:0;
 }
 
+.main-wraper{
+    position: relative;
+}
+
+.header{
+    position:sticky;
+    top:0;
+    z-index: 10;
+    background-color: #FFFFFF;
+}
+
 .page_title{
     display: block;
     font-size: 150%;
     font-weight: bold;
     text-align: center;
-    margin: 20px;
+    padding: 10px;
 }
 
 .counter_wrap{
@@ -43,14 +54,14 @@ ul,li{
 
 ul.image_table{
     overflow: hidden;
-    text-align: left;
+    text-align: center;
     max-width: 750px;
     margin: auto;
 }
 ul.image_table li{
     display: inline-block;
     position: relative;
-    margin: 6px;
+    margin: 20px;
     background-color: #000000;
 }
 ul.image_table li input[type=checkbox] + img{
@@ -91,9 +102,9 @@ ul.image_table li input[type=checkbox]:checked + label img{
 /*ウィンドウ幅が最大479pxまでの場合に適用 スマホ*/
 @media screen and (max-width: 599px) {
     .page_title{
-        font-size: 120%;
+        font-size: 110%;
     }
     .counter_wrap{
-        font-size: 120%;
+        font-size: 110%;
     }
 }
