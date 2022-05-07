@@ -29,13 +29,16 @@ ul,li{
 
 .main-wraper{
     position: relative;
+    background-color: #e7d2ff;
 }
-
+/* ヘッダーCSS */
 .header{
     position:sticky;
     top:0;
     z-index: 10;
-    background-color: #FFFFFF;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #333;
+    background-color: #e7d2ff;
 }
 
 .page_title{
@@ -43,15 +46,26 @@ ul,li{
     font-size: 150%;
     font-weight: bold;
     text-align: center;
-    padding: 10px;
+    padding: 10px 0 0;
 }
 
 .counter_wrap{
     text-align: center;
-    font-size: 150%;
+    font-size: 180%;
+    padding: 5px 0;
 }
 
+/* お知らせ */
+.info_box{
+    border: 2px solid #333;
+    margin: auto;
+    width: 90vw;
+    max-width: 750px;
+    padding: 10px 3px;
+    background-color: #FFFFFF;
+}
 
+/* 画像一覧 */
 ul.image_table{
     overflow: hidden;
     text-align: center;
@@ -95,7 +109,7 @@ ul.image_table li input[type=checkbox]:checked + label img{
         font-size: 140%;
     }
     .counter_wrap{
-        font-size: 140%;
+        font-size: 150%;
     }
 }
 
@@ -105,6 +119,6 @@ ul.image_table li input[type=checkbox]:checked + label img{
         font-size: 110%;
     }
     .counter_wrap{
-        font-size: 110%;
+        font-size: 130%;
     }
 }
