@@ -1,0 +1,99 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	font-family: "メイリオ", Meiryo, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+}
+html,body,div,span,h1,h2,h3,p,table,tr,th,td,ul,li,
+section,nav,header,footer,img,a{
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	background:transparent;
+	box-sizing:border-box;
+	font-size:100%;
+	font-weight:normal;
+	vertical-align:baseline;
+	line-height:100%;
+}
+ul,li{
+	list-style:none;
+	list-style-position: inside;
+	margin:0;
+	padding:0;
+}
+
+.page_title{
+    display: block;
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+}
+
+.counter_wrap{
+    text-align: center;
+    font-size: 150%;
+}
+
+
+ul.image_table{
+    overflow: hidden;
+    text-align: left;
+    max-width: 750px;
+    margin: auto;
+}
+ul.image_table li{
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    background-color: #000000;
+}
+ul.image_table li input[type=checkbox] + img{
+    width:100%;
+    pointer-events: none;
+}
+ul.image_table li input[type=checkbox]{
+    position:absolute;
+    left:1px;
+    bottom:1px;
+}
+ul.image_table li input[type=checkbox]:checked + label img{
+    opacity: 0.6;
+}
+/* ul.image_table li img::after {
+    content:url('../img/sumi.png');
+    width: 100%;
+    position:absolute;
+    left:0;
+} */
+
+
+/*ウィンドウ幅が767px以上の場合に適用*/
+/* @media screen and (min-width: 1025px) {
+} */
+
+
+@media screen and (max-width: 1024px) {
+    /*ウィンドウ幅が最大767pxまでの場合に適用 タブレット*/
+    .page_title{
+        font-size: 140%;
+    }
+    .counter_wrap{
+        font-size: 140%;
+    }
+}
+
+/*ウィンドウ幅が最大479pxまでの場合に適用 スマホ*/
+@media screen and (max-width: 599px) {
+    .page_title{
+        font-size: 120%;
+    }
+    .counter_wrap{
+        font-size: 120%;
+    }
+}
