@@ -50,7 +50,7 @@ ul.image_table{
 ul.image_table li{
     display: inline-block;
     position: relative;
-    margin: 10px;
+    margin: 6px;
     background-color: #000000;
 }
 ul.image_table li input[type=checkbox] + img{
