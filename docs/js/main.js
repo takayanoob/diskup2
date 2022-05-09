@@ -6,14 +6,14 @@ var COOKIE_NAME = "clear_check";
 $(document).ready(function() {
 
     //  クッキーからチェック状況を取得する
-    var check_json = Cookies.get(COOKIE_NAME);
+    var check_json = window.localStorage.getItem(COOKIE_NAME);
     var clear_check = {};
     if(check_json){
         clear_check = $.parseJSON(check_json);
     }
     // console.log(clear_check);
     // console.log(clear_check[1]);
-
+    $('ul.image_table').html("");
     //  画像テーブル作成
     for(i = 1; i<= IMAGE_MAX; i++){
         //  チェック状態確認
@@ -49,7 +49,7 @@ $(document).ready(function() {
         }else{
             clear_check[num] = false;
         }
-        Cookies.set(COOKIE_NAME,JSON.stringify(clear_check));   //  クッキー保存
+        window.localStorage.setItem(COOKIE_NAME,JSON.stringify(clear_check));
     });
 
     //  初回のチェック数更新
