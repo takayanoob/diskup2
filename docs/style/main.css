@@ -40,6 +40,7 @@ ul,li{
 }
 /* ヘッダーCSS */
 .header{
+    text-align: center;
     position:sticky;
     top:0;
     z-index: 10;
@@ -104,6 +105,40 @@ ul.image_table li input[type=checkbox]:checked + label img{
     left:0;
 } */
 
+/*  SSミッション側  */
+.one-wraper{
+    width: 90vw;
+    max-width: 750px;
+    margin: auto;
+    background-color: #edf0f2;
+}
+.sep_title{
+    font-weight: bold;
+    padding: 5px 10px;
+    border-bottom: #00a4d1 solid 4px;
+}
+
+
+.one_box{
+    padding: 10px 3px;
+    background-color: #FFFFFF;
+}
+.one_box .one_title{
+    padding: 5px 3px;
+    border-bottom: 1px solid #7f3cbd;
+    margin-bottom: 3px;
+}
+.one_box .one_body p{
+    line-height: 1.5em;
+}
+.one_box img{
+    border: 1px solid #ddd;
+    padding: 6px;
+    margin: 3px;
+}
+.header a{
+    line-height: 2.0em;
+}
 
 /*ウィンドウ幅が767px以上の場合に適用*/
 /* @media screen and (min-width: 1025px) {
