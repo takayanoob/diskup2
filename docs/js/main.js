@@ -77,6 +77,7 @@ $(document).ready(function() {
             $('.img_box').addClass('not_edit');
         }
     });
+    $('.switchArea #switch1').trigger('change');
 });
 
 //  チェック数の更新
